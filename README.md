@@ -1,1 +1,1 @@
-my other readme
+my other shell basic readme
