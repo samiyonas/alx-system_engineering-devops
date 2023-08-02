@@ -4,3 +4,4 @@
 3-displays the directory content in a long format
 4-display hidden files in a long format
 5-display directory content with user and group ID displayed numerically
+6-a script that creates a directory
