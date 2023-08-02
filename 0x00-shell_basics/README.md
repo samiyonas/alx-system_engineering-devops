@@ -12,3 +12,4 @@
 11-a script that lists all files in three different directories
 12-a script that prints the type of a file
 13-create a symbolic link
+14-Create a script that copies files from the current working directory to the parent working directory
