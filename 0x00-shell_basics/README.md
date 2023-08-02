@@ -5,3 +5,4 @@
 4-display hidden files in a long format
 5-display directory content with user and group ID displayed numerically
 6-a script that creates a directory
+7-moving a file from directory to directory
