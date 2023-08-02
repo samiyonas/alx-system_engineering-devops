@@ -14,3 +14,4 @@
 13-create a symbolic link
 14-Create a script that copies files from the current working directory to the parent working directory
 15-a script that moves all files beginning in uppercase to directory
+16-Create a script that deletes all files in the current working directory that end with the character /root
