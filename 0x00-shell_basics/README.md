@@ -7,3 +7,4 @@
 6-a script that creates a directory
 7-moving a file from directory to directory
 8-delete the file
+delete the directory
