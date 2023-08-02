@@ -9,3 +9,4 @@
 8-delete the file
 9-delete the directory
 10-a script that changes the working directory to the previous one
+11-a script that lists all files in three different directories
