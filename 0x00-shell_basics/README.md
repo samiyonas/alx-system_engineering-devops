@@ -11,3 +11,4 @@
 10-a script that changes the working directory to the previous one
 11-a script that lists all files in three different directories
 12-a script that prints the type of a file
+13-create a symbolic link
