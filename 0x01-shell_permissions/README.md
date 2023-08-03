@@ -6,3 +6,4 @@
 5-write a script that adds execute permission to the owner
 6-a script that adds execute permission to owner and group, and read permission to others
 7-a script that adds execution permission for everybody
+8-a script that gives full permission to others but none to owner and groups
