@@ -4,3 +4,4 @@
 3-write a script that changes the owner of a file
 4-write a script that creates empty file
 5-write a script that adds execute permission to the owner
+6-a script that adds execute permission to owner and group, and read permission to others
