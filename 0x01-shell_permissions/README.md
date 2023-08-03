@@ -8,3 +8,4 @@
 7-a script that adds execution permission for everybody
 8-a script that gives full permission to others but none to owner and groups
 9-write a script that sets the mode of a file
+10-write a script that sets mode of the file
