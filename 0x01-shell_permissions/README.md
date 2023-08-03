@@ -9,3 +9,4 @@
 8-a script that gives full permission to others but none to owner and groups
 9-write a script that sets the mode of a file
 10-write a script that sets mode of the file
+11-a script that adds execute permission to all subdirectories of the current directory
