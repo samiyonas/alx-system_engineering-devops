@@ -3,3 +3,4 @@
 2-a script that prints all the groups the current user is part of
 3-write a script that changes the owner of a file
 4-write a script that creates empty file
+5-write a script that adds execute permission to the owner
