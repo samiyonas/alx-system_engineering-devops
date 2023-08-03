@@ -14,3 +14,4 @@
 13-write a script that changes the group owner
 14-write a script that change owner and group
 15-write a script that changes the owner and group of symbolic link
+16-a script that changes the owner if only it is currently owned by guillaume
