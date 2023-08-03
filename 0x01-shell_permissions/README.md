@@ -10,3 +10,4 @@
 9-write a script that sets the mode of a file
 10-write a script that sets mode of the file
 11-a script that adds execute permission to all subdirectories of the current directory
+12-Create a script that creates a directory called my_dir with permissions 751 in the working directory.
