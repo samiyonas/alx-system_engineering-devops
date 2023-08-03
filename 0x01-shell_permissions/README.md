@@ -13,3 +13,4 @@
 12-Create a script that creates a directory called my_dir with permissions 751 in the working directory.
 13-write a script that changes the group owner
 14-write a script that change owner and group
+15-write a script that changes the owner and group of symbolic link
