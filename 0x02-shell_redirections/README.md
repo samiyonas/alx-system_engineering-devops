@@ -3,3 +3,4 @@
 2-print content of file
 3-display the content of two files
 4-print the last 10 lines
+5-print the first lines
