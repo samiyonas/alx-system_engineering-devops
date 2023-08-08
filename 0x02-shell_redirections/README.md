@@ -7,3 +7,4 @@
 6-print the third line
 7-create a file
 8-redirect output
+9-dupllicate last line
