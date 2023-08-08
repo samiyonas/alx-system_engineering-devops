@@ -6,3 +6,4 @@
 5-print the first lines
 6-print the third line
 7-create a file
+8-redirect output
