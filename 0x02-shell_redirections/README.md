@@ -17,3 +17,4 @@
 16-the pattern root and 3 lines after them
 17-find the pattern and print except that patters
 18-print those that start with letter only
+19-transliterating letters
