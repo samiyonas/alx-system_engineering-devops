@@ -18,3 +18,4 @@
 17-find the pattern and print except that patters
 18-print those that start with letter only
 19-transliterating letters
+20-remove both C and c
