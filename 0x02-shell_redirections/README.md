@@ -19,3 +19,4 @@
 18-print those that start with letter only
 19-transliterating letters
 20-remove both C and c
+21-reverse the character
