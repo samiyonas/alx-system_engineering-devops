@@ -6,3 +6,4 @@
 5-a script that lists local and environment variables and functions
 6-create a script that creates new local variable
 7-create a script that creates a new global variable
+8-a script that adds
