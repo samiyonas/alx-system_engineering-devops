@@ -9,3 +9,4 @@
 8-a script that adds
 9-power divided by divide
 10-a script that displays a result of exponent
+11-binary to decimal
