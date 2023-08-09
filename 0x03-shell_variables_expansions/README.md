@@ -8,3 +8,4 @@
 7-create a script that creates a new global variable
 8-a script that adds
 9-power divided by divide
+10-a script that displays a result of exponent
