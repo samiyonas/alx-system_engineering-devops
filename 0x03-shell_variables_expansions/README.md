@@ -11,3 +11,4 @@
 10-a script that displays a result of exponent
 11-binary to decimal
 12-print all possible combinations of 2 letters
+13-print numbers with two decimal places
