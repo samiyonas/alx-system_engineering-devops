@@ -7,3 +7,4 @@
 6-create a script that creates new local variable
 7-create a script that creates a new global variable
 8-a script that adds
+9-power divided by divide
