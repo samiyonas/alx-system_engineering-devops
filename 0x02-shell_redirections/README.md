@@ -12,3 +12,4 @@
 11-counting directories
 12-newest first
 13-only print unique lines
+14-lines that contain the word root
