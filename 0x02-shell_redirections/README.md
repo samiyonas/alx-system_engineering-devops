@@ -20,3 +20,4 @@
 19-transliterating letters
 20-remove both C and c
 21-reverse the character
+22-a script that displays all users and home directory
