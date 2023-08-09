@@ -13,3 +13,4 @@
 12-newest first
 13-only print unique lines
 14-lines that contain the word root
+15-count lines that contain the word bin
