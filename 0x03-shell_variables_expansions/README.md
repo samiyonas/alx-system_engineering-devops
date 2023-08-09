@@ -13,3 +13,4 @@
 12-print all possible combinations of 2 letters
 13-print numbers with two decimal places
 100-decimal to hexadecimal
+101-a script that encodes and decodes
