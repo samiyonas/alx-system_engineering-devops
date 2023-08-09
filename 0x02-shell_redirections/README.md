@@ -9,3 +9,4 @@
 8-redirect output
 9-dupllicate last line
 10-delete all files that end with .js
+11-counting directories
