@@ -1,0 +1,17 @@
+I added 1 more server for hign availability and firewall for extra security and used HTTPS for secure response of web pages and monitoring so I know how my software is doing.
+
+The firewalls are for security and they only let packets based on preconfiguration.
+
+So that the response page can be encrypted and can only be decrypted once it gets to where it should go.
+
+Monitoring is used to know how your software is doing.
+
+It will give me the queries per second
+
+It reduces the security and puts more burden on CPU and memories of the laod balancer.
+
+If it fails then we wouldn't be able to write on our database
+
+Because all of them would be prone to the same type of error and if one server fails it's likely that the other one's will fail too.
+
+https://imgur.com/a/vuo9tiV
