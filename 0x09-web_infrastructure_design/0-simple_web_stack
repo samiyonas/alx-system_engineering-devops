@@ -12,4 +12,10 @@ The role of a database is to store different information both structured and uns
 
 HTTP
 
+Since this design has only one server it has single point of failure
+
+When maintenance is needed or a new code is being deployed the server will have a downtime and it has to be restarted
+
+Since this design doesn't have more than one server and a load balancer it can not scale too much incoming traffic
+
 https://imgur.com/a/N1d4cRG
