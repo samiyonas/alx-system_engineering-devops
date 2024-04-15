@@ -1,0 +1,21 @@
+Server is a physical or a virtual machine that serves other programs or devices.
+
+The role of domain name is to access website that is hosted on a web server which we don't know it's IP address and for this abstraction we use DNS(Domain Name System).
+
+It is in a CNAME record.
+
+The role of a web server is to accept web request through HTTPS and give response(web pages).
+
+The role of an application server is to give dynamic web pages to the client(web server) and it communicates with databases to create real time dynamic web pages.
+
+The role of a database is to store different information both structured and unstructured systematically so we can manipulate it.
+
+HTTP
+
+Since this design has only one server it has single point of failure
+
+When maintenance is needed or a new code is being deployed the server will have a downtime and it has to be restarted
+
+Since this design doesn't have more than one server and a load balancer it can not scale too much incoming traffic
+
+https://imgur.com/a/N1d4cRG

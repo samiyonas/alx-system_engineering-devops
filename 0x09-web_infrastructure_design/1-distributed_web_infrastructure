@@ -1,0 +1,13 @@
+So I added one extra server and a load balancer and the reason I added the extra server is so that I won't have a single point of failure and the reason I added the load balancer is so that it will assign requests to both servers using it's algorithms fairly.
+
+It is configured with weighted round robin and fastest algorithms and how it works is it will assign the requests based on the server's capability and it's response time so a server with high capability(e.g hardware capability) and fast response time will get assigned the incoming request.
+
+My load balancer is enabling an Active-Active setup. So the difference between Active-Active load setup and Active-Pasive setup is that in Active-Active setup all servers are being used all the time and in Active-Passive setup some are being used all the time and some are kind of put to sleep and only when there is a problem with the active one they get awake and start accepting requests
+
+Since we have two servers I don't think we have a single point of failure
+
+Since I am not using any firewall software or HTTPS, the design is hignly vulnerable
+
+No monitoring so I don't know how my software is doing, if there is anything to fix or not.
+
+https://imgur.com/a/4PKExki
