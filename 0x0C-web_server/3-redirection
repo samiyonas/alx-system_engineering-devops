@@ -1,4 +1,4 @@
-#!/ur/bin/env bash
+#!/usr/bin/env bash
 # redirection using sed
 
 # update the system and download nginx if it's not already downloaded
