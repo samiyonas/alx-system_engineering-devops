@@ -2,15 +2,16 @@
 # give info about a domain name
 
 basic_info () {
-    echo "The subdomain www is a A record and points to 34.224.6.204"
-    echo "The subdomain lb-01 is a A record and points to  	34.224.6.204"
-    echo "The subdomain web-01 is a A record and points to 100.25.130.63"
-    echo "The subdomain web-02 is a A record and points to 100.25.200.147"
+    ip=$(dig $1 +short)
+    echo "The subdomain $2 is a A record and points to $ip"
 }
 
 if [ "$2" ]
 then
     dig "$2.$1" | grep -A1 ";; ANSWER SECTION:" | awk 'NR % 2 == 0' | awk -v d="$2" '{print "The subdomain " d " is a " $4 " record and points to " $5}'
 else
-    basic_info;
+    basic_info "www.$1" "www";
+    basic_info "lb-01.$1" "lb-01";
+    basic_info "web-01.$1" "web-01";
+    basic_info "web-02.$1" "web-02";
 fi
