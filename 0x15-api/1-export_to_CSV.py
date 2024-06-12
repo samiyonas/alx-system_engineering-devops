@@ -12,7 +12,7 @@ if __name__ == "__main__":
     res_2 = res_2.json()
 
     Id = int(argv[1])
-    name = res_1[Id - 1].get("name")
+    name = res_1[Id - 1].get("username")
     tasks = 0
     to_csv = []
 
