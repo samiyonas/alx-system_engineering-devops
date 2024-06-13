@@ -13,14 +13,16 @@ if __name__ == "__main__":
 
     Id = int(argv[1])
     name = res_1[Id - 1].get("username")
+
     tasks = 0
     to_csv = []
 
     for i in range((Id - 1) * 20, ((Id - 1) * 20) + 20):
         is_completed = res_2[i].get("completed")
         title = res_2[i].get("title")
+        userId = res_2[i].get("userId")
 
-        line = f'"{Id}","{name}","{is_completed}","{title}"\n'
+        line = f'"{userId}","{name}","{is_completed}","{title}"\n'
         to_csv.append(line)
 
     with open("{}.csv".format(Id), 'w') as f:
