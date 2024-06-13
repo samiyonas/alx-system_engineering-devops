@@ -1,43 +1,31 @@
 #!/usr/bin/python3
-""" gather data from an API """
+"""Accessing a REST API for todo lists of employees"""
+
 import json
 import requests
-from sys import argv
+import sys
 
 
-if __name__ == "__main__":
-    res_1 = requests.get("https://jsonplaceholder.typicode.com/users")
-    res_2 = requests.get("https://jsonplaceholder.typicode.com/todos")
+if __name__ == '__main__':
+    url = "https://jsonplaceholder.typicode.com/users"
 
-    res_1 = res_1.json()
-    res_2 = res_2.json()
+    response = requests.get(url)
+    users = response.json()
 
-    user_list = []
-
-    x = 0
-    y = 20
-    fdct = {}
-    flist = []
-    for i in res_1:
-        for j in res_2[x:y]:
-            j["username"] = i.get("username")
-        x = x + 20
-        y = y + 20
-
-    for k in res_2:
-        dct = {}
-        dct["username"] = k["username"]
-        dct["task"] = k["title"]
-        dct["completed"] = k["completed"]
-        dct["userId"] = k["userId"]
-        user_list.append(dct)
-    for lis in res_2[1:11]:
-        for m in user_list:
-            if m["userId"] == lis.get("userId"):
-                flist.append(m)
-            else:
-                break
-        fdct[str(lis.get("userId"))] = flist
-
-    with open("todo_all_employees.json", 'w') as f:
-        json.dump(fdct, f)
+    dictionary = {}
+    for user in users:
+        user_id = user.get('id')
+        username = user.get('username')
+        url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
+        url = url + '/todos/'
+        response = requests.get(url)
+        tasks = response.json()
+        dictionary[user_id] = []
+        for task in tasks:
+            dictionary[user_id].append({
+                "task": task.get('title'),
+                "completed": task.get('completed'),
+                "username": username
+            })
+    with open('todo_all_employees.json', 'w') as file:
+        json.dump(dictionary, file)
