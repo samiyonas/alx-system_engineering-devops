@@ -31,13 +31,13 @@ if __name__ == "__main__":
         dct["completed"] = k["completed"]
         dct["userId"] = k["userId"]
         user_list.append(dct)
-    for l in range(1, 11):
+    for lis in res_2[1:11]:
         for m in user_list:
-            if m["userId"] == l:
+            if m["userId"] == lis.get("userId"):
                 flist.append(m)
             else:
                 break
-        fdct[str(l)] = flist
+        fdct[str(lis.get("userId"))] = flist
 
     with open("todo_all_employees.json", 'w') as f:
         json.dump(fdct, f)
