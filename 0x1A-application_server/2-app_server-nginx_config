@@ -1,0 +1,18 @@
+server {
+       listen 80;
+       listen [::]:80;
+
+       server_name 127.0.0.1 100.25.130.63;
+
+       root /var/www/sesami.tech/html;
+       index index.html;
+
+	   location /airbnb-onepage/ {
+		    include proxy_params;
+		    proxy_pass http://localhost:5000/airbnb-onepage/;
+	   }
+
+       location / {
+               try_files $uri $uri/ =404;
+       }
+}
