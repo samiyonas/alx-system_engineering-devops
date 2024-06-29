@@ -8,8 +8,8 @@ def number_of_subscribers(subreddit):
     headers = {"User-Agent": 'firefox'}
     response = requests.get(
             "https://www.reddit.com/r/{}/about.json".format(subreddit),
-            allow_redirects=False,
-            headers=headers)
+            headers=headers,
+            allow_redirects=False)
 
     if response.status_code != 200:
         return 0
