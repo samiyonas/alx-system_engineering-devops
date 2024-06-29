@@ -5,7 +5,7 @@ import requests
 
 def number_of_subscribers(subreddit):
     """ a function to see the number of subs of a subreddit """
-    headers = {"User-Agent": 'firefox'}
+    headers = {"User-Agent": "linux:alx_project (by /u/samiyonas)"}
     response = requests.get(
             "https://www.reddit.com/r/{}/about.json".format(subreddit),
             headers=headers,
