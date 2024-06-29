@@ -6,9 +6,11 @@ from sys import argv
 
 def number_of_subscribers(subreddit):
     """ a function to see the number of subs of a subreddit """
+    headers = {"User-Agent": 'firefox'}
     response = requests.get(
             "https://www.reddit.com/r/{}/about.json".format(subreddit),
-            allow_redirects=False)
+            allow_redirects=False,
+            headers=headers)
 
     if response.status_code != 200:
         return 0
